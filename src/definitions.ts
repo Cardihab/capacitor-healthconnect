@@ -1,3 +1,6 @@
 export interface CapacitorHealthConnectPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  /** 
+   * Check if the HealthKit API is available on the current device.
+  */
+  isAvailable(): Promise<boolean>;
 }

@@ -12,11 +12,7 @@ public class CapacitorHealthConnectPlugin extends Plugin {
     private CapacitorHealthConnect implementation = new CapacitorHealthConnect();
 
     @PluginMethod
-    public void echo(PluginCall call) {
-        String value = call.getString("value");
-
-        JSObject ret = new JSObject();
-        ret.put("value", implementation.echo(value));
-        call.resolve(ret);
+    public void isAvailable(PluginCall call) {
+        call.resolve(implementation.isAvailable(value));
     }
 }

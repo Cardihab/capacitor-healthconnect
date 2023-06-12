@@ -1,2 +1,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <queries>
+        <package android:name="com.google.android.apps.healthdata" />
+    </queries>
+
+    <uses-permission android:name="android.permission.health.READ_ACTIVE_CALORIES_BURNED" />
+    <uses-permission android:name="android.permission.health.READ_BASAL_BODY_TEMPERATURE" />
+    <!-- 
+        TODO: Permissions for all data types
+        https://developer.android.com/guide/health-and-fitness/health-connect/data-and-data-types/data-types#alpha10
+    -->
 </manifest>

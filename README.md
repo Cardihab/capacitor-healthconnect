@@ -13,24 +13,22 @@ npx cap sync
 
 <docgen-index>
 
-* [`echo(...)`](#echo)
+* [`isAvailable()`](#isavailable)
 
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-### echo(...)
+### isAvailable()
 
 ```typescript
-echo(options: { value: string; }) => Promise<{ value: string; }>
+isAvailable() => Promise<boolean>
 ```
 
-| Param         | Type                            |
-| ------------- | ------------------------------- |
-| **`options`** | <code>{ value: string; }</code> |
+Check if the HealthKit API is available on the current device.
 
-**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+**Returns:** <code>Promise&lt;boolean&gt;</code>
 
 --------------------
 
