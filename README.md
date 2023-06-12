@@ -2,6 +2,9 @@
 
 Capacitor plugin to interact with Android HealthConnect
 
+## Get Permission
+https://docs.google.com/forms/d/1LFjbq1MOCZySpP5eIVkoyzXTanpcGTYQH26lKcrQUJo/viewform?edit_requested=true
+
 ## Install
 
 ```bash
