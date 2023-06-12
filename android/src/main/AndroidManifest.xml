@@ -5,8 +5,19 @@
 
     <uses-permission android:name="android.permission.health.READ_ACTIVE_CALORIES_BURNED" />
     <uses-permission android:name="android.permission.health.READ_BASAL_BODY_TEMPERATURE" />
-    <!-- 
-        TODO: Permissions for all data types
-        https://developer.android.com/guide/health-and-fitness/health-connect/data-and-data-types/data-types#alpha10
-    -->
+    <!-- TODO: Permissions for relevant data types -->
+    <!-- https://developer.android.com/guide/health-and-fitness/health-connect/data-and-data-types/data-types#alpha10 -->
+
+    <application>
+        <!-- Activity to show rationale of Health Connect permissions -->
+        <activity
+            android:name=".PermissionsRationaleActivity"
+            android:exported="true"
+            android:enabled="true">
+            <!-- Handle intent -->
+            <intent-filter>
+                <action android:name="androidx.health.ACTION_SHOW_PERMISSIONS_RATIONALE" />
+            </intent-filter>
+        </activity>
+    </application>
 </manifest>

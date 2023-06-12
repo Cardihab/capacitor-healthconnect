@@ -10,4 +10,9 @@ export class CapacitorHealthConnectWeb
     console.log('HealthConnect is not available in web.');
     return false;
   }
+
+  async requestAuthorization(): Promise<void> {
+    console.log('HealthConnect is not available in web.');
+    return;
+  }
 }

@@ -35,4 +35,32 @@ public class CapacitorHealthConnect {
 
         return false;
     }
+    
+    public void requestAuthorization() {
+        // Request authorization for the permissions needed 
+        
+        /*
+        var PERMISSIONS =
+        setOf(
+            HealthPermission.getReadPermission(HeartRateRecord::class),
+            HealthPermission.getWritePermission(HeartRateRecord::class),
+            HealthPermission.getReadPermission(StepsRecord::class),
+            HealthPermission.getWritePermission(StepsRecord::class)
+        )
+
+        // TODO: Permissions for all relevant data types
+        
+        var requestPermissionActivityContract = PermissionController.createRequestPermissionResultContract()
+
+        var requestPermissions = registerForActivityResult(requestPermissionActivityContract) { granted ->
+            if (granted.containsAll(PERMISSIONS)) {
+                // Permissions successfully granted
+            } else {
+                // Lack of required permissions
+            }
+        }
+        */
+
+        return
+    }
 }

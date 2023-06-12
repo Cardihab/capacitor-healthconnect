@@ -15,4 +15,9 @@ public class CapacitorHealthConnectPlugin extends Plugin {
     public void isAvailable(PluginCall call) {
         call.resolve(implementation.isAvailable(value));
     }
+
+    @PluginMethod
+    public void requestAuthorization(PluginCall call) {
+        call.resolve(implementation.requestAuthorization(value));
+    }
 }

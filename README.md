@@ -14,6 +14,7 @@ npx cap sync
 <docgen-index>
 
 * [`isAvailable()`](#isavailable)
+* [`requestAuthorization()`](#requestauthorization)
 
 </docgen-index>
 
@@ -29,6 +30,17 @@ isAvailable() => Promise<boolean>
 Check if the HealthKit API is available on the current device.
 
 **Returns:** <code>Promise&lt;boolean&gt;</code>
+
+--------------------
+
+
+### requestAuthorization()
+
+```typescript
+requestAuthorization() => Promise<void>
+```
+
+Request authorization to access health data.
 
 --------------------
 
