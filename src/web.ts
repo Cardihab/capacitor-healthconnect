@@ -15,4 +15,9 @@ export class CapacitorHealthConnectWeb
     console.log('HealthConnect is not available in web.');
     return;
   }
+
+  async queryHConnectSampleType(sampleType: string, start?: Date, end?: Date): Promise<any> {
+    console.log('HealthConnect is not available in web.');
+    return;
+  }
 }

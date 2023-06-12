@@ -1,4 +1,5 @@
 package com.cardihab.plugins.capacitorhealthconnect;
+import androidx.health.connect.client.request.ReadRecordsRequest;
 
 import android.util.Log;
 
@@ -62,5 +63,24 @@ public class CapacitorHealthConnect {
         */
 
         return
+    }
+
+    public void queryHConnectSampleTypes(sampleType: String, startDate: Date, endDate: Date) {
+        /*
+        // TODO: Map sampleType to HealthConnect sample type
+        var hcSampleType = StepsRecord::class;
+        var startTime = startDate.toInstant().atZone(ZoneId.systemDefault()).toEpochSecond()
+        var endTime = endDate.toInstant().atZone(ZoneId.systemDefault()).toEpochSecond()
+
+        var response = healthConnectClient.readRecords(
+                ReadRecordsRequest(
+                    hcSampleType,
+                    timeRangeFilter = TimeRangeFilter.between(startTime, endTime)
+                )
+            )
+
+        return response;
+        */
+        return;
     }
 }

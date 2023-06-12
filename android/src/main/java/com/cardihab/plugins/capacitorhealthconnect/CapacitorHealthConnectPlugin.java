@@ -13,11 +13,21 @@ public class CapacitorHealthConnectPlugin extends Plugin {
 
     @PluginMethod
     public void isAvailable(PluginCall call) {
-        call.resolve(implementation.isAvailable(value));
+        call.resolve(implementation.isAvailable());
     }
 
     @PluginMethod
     public void requestAuthorization(PluginCall call) {
-        call.resolve(implementation.requestAuthorization(value));
+        call.resolve(implementation.requestAuthorization());
+    }
+
+    @PluginMethod
+    public void queryHConnectSampleTypes(PluginCall call) {
+        JSObject callValue = call.getData();
+        const sampleType = callValue.get("sampleType")
+        const startDate = callValue.get("start")
+        const endDate = callValue.get("end")
+
+        call.resolve(implementation.queryHConnectSampleTypes(sampleType, startDate, endDate));
     }
 }
